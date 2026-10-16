@@ -161,8 +161,8 @@ class AblationCameraSim(AblationCameraInterface):
                 else:
                     ret_image[i].append(0)
         return ret_image
-    
-    async def get_image_prev(self) -> Union[str, list[list[list[int]]]]:
+
+    async def get_image_preview(self) -> Union[str, list[list[list[int]]]]:
         ret_image: list[list[list[int]]] = []
         for i in range(360):
             ret_image.append([])
